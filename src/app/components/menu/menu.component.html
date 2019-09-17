@@ -1,0 +1,11 @@
+<ul class="list-group">
+  <!-- <a routerLink="/page1" class="list-group-item">page1</a>
+  <a routerLink="/page2" class="list-group-item">page2</a> -->
+
+  <a
+    routerLink="{{ ruta.path }}"
+    class="list-group-item"
+    *ngFor="let ruta of rutas"
+    >{{ ruta.name }}</a
+  >
+</ul>

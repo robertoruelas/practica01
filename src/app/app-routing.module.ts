@@ -13,6 +13,10 @@ const routes: Routes = [
     component: Page2Component
   },
   {
+    path: 'page3',
+    loadChildren: './pages/page3/page3.module#Page3Module'
+  },
+  {
     path: '**',
     redirectTo: 'page1'
   }
